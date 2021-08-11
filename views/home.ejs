@@ -1,0 +1,17 @@
+<%- include('layouts/header.ejs'); -%>
+
+<h1>The Freedom to Create the Blog You Want</h1>
+<br>
+<p> <%= Hcontent %> </p>
+<a class="compos" href="/compose">Compose</a>
+
+<% posts.forEach(function(post){ %>
+<br>
+<h1><%= post.title %> </h1>
+<p> <%= post.content.substring(0,100)  + "..." %>
+
+    <a href="/<%= post.title %>">Read more</a>
+</p>
+<% }); %>
+
+<%- include('layouts/footer.ejs'); -%>

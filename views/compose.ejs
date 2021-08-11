@@ -1,0 +1,26 @@
+<%- include('layouts/header.ejs'); -%>
+
+
+<center>
+    <h1>Compose</h1>
+    <form action="/compose" method="POST">
+        <div class="compo-title">
+            <label for="1">Title</label>
+            <input type="text" name="x" id="1">
+        </div>
+
+        <div class="compo-area">
+            <label for="2">Post</label>
+            <textarea name="y" id="" cols="150" rows="15" id="2"></textarea>
+        </div>
+
+        <div class="compo-button">
+            <button type="submit">Publish</button>
+        </div>
+
+
+    </form>
+
+</center>
+
+<%- include('layouts/footer.ejs'); -%>
